@@ -61,6 +61,7 @@ h1{font-family:var(--serif);font-weight:400;font-size:clamp(56px,min(13vw,17vh),
 .round[hidden]{display:none}
 #sbk,#vbk{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);display:none;place-items:center;padding:20px;opacity:0;transition:opacity .3s}#sbk.show,#vbk.show{opacity:1}
 #smodal,#vmodal{background:var(--mbg);color:var(--mtx);width:min(440px,100%);border-radius:10px;padding:30px;position:relative;transform:translateY(18px) scale(.97);opacity:0;transition:.35s cubic-bezier(.2,.8,.2,1)}#sbk.show #smodal,#vbk.show #vmodal{transform:none;opacity:1}
+#smodal{max-height:calc(100vh - 40px);overflow-y:auto}
 #smodal .mono,#vmodal .mono{color:#6c6a66}#smodal h3{font-family:var(--serif);font-weight:400;font-size:30px;margin:10px 0 8px}#smodal .s{color:#6c6a66;margin-bottom:18px;line-height:1.5;font-size:15px}
 #sx,#vx{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center}#sx:hover,#vx:hover{background:rgba(0,0,0,.07)}
 .seg{display:grid;grid-template-columns:1fr 1fr;gap:10px}.seg button{border:1px solid rgba(0,0,0,.2);border-radius:10px;padding:16px 10px;transition:.2s;font-size:16px}.seg button small{display:block;opacity:.7;margin-top:4px;font-size:12px}.seg button[aria-pressed=true]{background:var(--mtx);color:var(--mbg)}
